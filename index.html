@@ -12,42 +12,48 @@
 </head>
 <body>
 
-  <header>
-  	<h1>Tic-Tac-Toe</h1>
-  	<h2>Can you beat the computer?</h2>
-  </header>
+	<header>
+		<h1>Tic-Tac-Toe</h1>
+		<h2>Can you beat the computer?</h2>
+	</header>
 
-  <div class="intro">
-  	<div class="yourTask">
-  		<p>The year is 2036. Artificial intelligence is leaps and bounds ahead of what it once was in the 2020s, and as a result, robots live alongside human beings, many of whom are cyborgs with biomechatronics. In this new world, Tic-Tac-Toe is the universal law. All crimes, decisions, and contests are decidided with a final game of Tic-Tac-Toe. Robots believe they are smarter than humans and go out of their way to prove it. A foolish robot has challenged you to a game, betting his brand new MetaCorp Roadster for your motorcycle. Teach this node-headed bot a lesson and take his car! Make sure to ride off into the night at speeds above 200mph. </p>
-  	</div>
-  	<div class="advertisement">
-  		<img class="car" src="https://i.pinimg.com/originals/53/ad/92/53ad929213f59c7392bf92605868021f.gif" alt="car ad">
-  	</div>
-
-  </div>	
-
-  
-  	<div class="gameboard" id="gameboard">
-  		<div data-cell-index="0" class="cell"></div>
-  		<div data-cell-index="1" class="cell"></div>
-  		<div data-cell-index="2" class="cell"></div>
-  		<div data-cell-index="3" class="cell"></div>
-  		<div data-cell-index="4" class="cell"></div>
-  		<div data-cell-index="5" class="cell"></div>
-  		<div data-cell-index="6" class="cell"></div>
-  		<div data-cell-index="7" class="cell"></div>
-  		<div data-cell-index="8" class="cell"></div>
+  	<div class="intro">
+		<div class="yourTask">
+			<p>The year is 2036. Artificial intelligence is leaps and bounds ahead of what it once was in the 2020s, and as a result, robots live alongside human beings, many of whom are cyborgs with biomechatronics. In this new world, Tic-Tac-Toe is the universal law. All crimes, decisions, and contests are decidided with a final game of Tic-Tac-Toe. Robots believe they are smarter than humans and go out of their way to prove it. A foolish robot has challenged you to a game, betting his brand new MetaCorp Roadster for your motorcycle. Teach this node-headed bot a lesson and take his car! Make sure to ride off into the night at speeds above 200mph. </p>
+		</div>
+		<div class="advertisement">
+			<img class="car" src="https://i.pinimg.com/originals/53/ad/92/53ad929213f59c7392bf92605868021f.gif" alt="car ad">
+		</div>
+		
   	</div>	
-
-	<h2 class="gamestatus"></h2>	
-
-  	<div class="play" id="play">
-  		
-  		<button class="restart" id="restart">Restart Game</button>
-
+	<div class="play" id="play">
+		<button class="start" id="start">Start Game</button>
+		<button class="restart" id="restart">Restart Game</button>
+		<h2 class="gamestatus"></h2>	
 	</div>
-  
+	<div class="dontHateThePlaya">
+		<div class="gameboard" id="gameboard">
+			<div data-cell-index="0" class="cell"></div>
+			<div data-cell-index="1" class="cell"></div>
+			<div data-cell-index="2" class="cell"></div>
+			<div data-cell-index="3" class="cell"></div>
+			<div data-cell-index="4" class="cell"></div>
+			<div data-cell-index="5" class="cell"></div>
+			<div data-cell-index="6" class="cell"></div>
+			<div data-cell-index="7" class="cell"></div>
+			<div data-cell-index="8" class="cell"></div>
+		</div>	
+		<div class="scores">
+			<div class="wins">
+				<h2>Your Wins: <span class="playerScore" id="playerScore"></span></h2>
+			</div>
+			<div class="wins">
+				<h2>Robot Wins: <span class="robotScore" id="robotScore"></span></h2>
+			</div>
+		</div>
+		
+	</div>
+	
 
 
   <!-- Audio Files -->
